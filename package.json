@@ -1,0 +1,25 @@
+{
+  "name": "strider-detection-rules",
+  "version": "0.0.1",
+  "description": "Makes it easier to write plugins with Gumshoe detection rules",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Strider-CD/strider-detection-rules.git"
+  },
+  "keywords": [
+    "strider",
+    "gumeshoe"
+  ],
+  "author": "Niall O'Higgins",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/Strider-CD/strider-detection-rules/issues"
+  },
+  "dependencies": {
+    "gumshoe": "~0.2.1"
+  }
+}
