@@ -4,15 +4,16 @@
   "description": "Makes it easier to write plugins with Gumshoe detection rules",
   "main": "index.js",
   "scripts": {
-    "test": "jshint && mocha -R tap"
+    "pretest": "eslint *.js test/",
+    "test": "nyc mocha -R spec",
+    "posttest": "nyc check-coverage"
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/Strider-CD/strider-detection-rules.git"
   },
   "keywords": [
-    "strider",
-    "gumeshoe"
+    "strider"
   ],
   "author": "Niall O'Higgins",
   "license": "BSD-3-Clause",
@@ -20,11 +21,17 @@
     "url": "https://github.com/Strider-CD/strider-detection-rules/issues"
   },
   "dependencies": {
-    "gumshoe": "~0.2.1"
+    "bluebird": "^3.7.1",
+    "debug": "^4.1.1",
+    "glob": "^7.1.6"
   },
   "devDependencies": {
-    "chai": "~1.8.1",
-    "mocha": "~1.14.0",
-    "jshint": "~2.3.0"
+    "chai": "^4.2.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-chai-expect": "^2.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "mocha": "^5.2.0",
+    "nyc": "^14.1.1"
   }
 }

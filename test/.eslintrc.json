@@ -1,0 +1,12 @@
+{
+  "env": {
+    "mocha": true
+  },
+  "plugins": [
+    "chai-expect"
+  ],
+  "rules": {
+    "chai-expect/missing-assertion": 2,
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": true}]
+  }
+}
